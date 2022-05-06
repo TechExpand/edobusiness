@@ -429,6 +429,18 @@ a.ssolink {
                       <label for="email">Email</label>
                       <input type="email" name="email">
                     </div>
+
+                    <div class="field padding-bottom--24">
+                      <label for="name">Name</label>
+                      <input type="text" name="name">
+                    </div>
+
+
+                    <div class="field padding-bottom--24">
+                      <label for="phone">Phone</label>
+                      <input type="tel" name="phone">
+                    </div>
+
                     <div class="field padding-bottom--24">
                       <div class="grid--50-50">
                         <label for="address">Address</label>
@@ -545,7 +557,9 @@ let objpara = JSON.parse(para)
    if(formProps.address === ""||
     formProps.country===""||
     formProps.email ===""||
-    formProps.state ===""
+    formProps.state ===""||
+    formProps.name ===""||
+    formProps.phone ===""
     ){
     showToast('Field Cannot be Empty');
    }else{
